@@ -24,6 +24,8 @@ body {
 header {
     text-align: center;
     margin-bottom: 2rem;
+    background: #218BC9;
+
 }
 
 
@@ -40,7 +42,6 @@ nav {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    gap: 2rem;
     margin-bottom: 3rem;
     font-size: 1.5rem;
 }
@@ -53,9 +54,9 @@ nav {
 
 .menu a:hover {
 
-    background-color: black;
+    background-color: #024166
+    background-color: #024166;
     color: white;
-}
 
 section {
 
@@ -64,7 +65,21 @@ section {
 
 article {
 
-    background-color: #f2f2f2;
+    background-color: #4CA2D5;
     padding: 2rem;
   
 }
+img {
+
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 2rem auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    background-color: #218BC9;
+    }
