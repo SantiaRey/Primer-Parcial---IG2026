@@ -7,11 +7,9 @@ body {
     font-family: "Barlow", sans-serif;
     background-image:
         linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
-    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
-    url("./img/fondo.png");
+        url("https://raw.githubusercontent.com/SantiaRey/Primer-Parcial---IG2026/2330bc9ab0cf0b5f55de1115d0bfc5406860914a/img/fondo.png");
     background-repeat: repeat;
 }
-
 
 .contenedor {
 
@@ -27,7 +25,6 @@ header {
     background: #218BC9;
 
 }
-
 
 header h1 {
     font-size: 4rem;
@@ -58,10 +55,9 @@ nav {
 
 .menu a:hover {
 
-    background-color: #024166
     background-color: #024166;
-    color: white;
-
+       color: white;
+}
 section {
 
     margin-bottom: 3rem;
