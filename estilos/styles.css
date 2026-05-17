@@ -8,7 +8,10 @@ body {
     background-image:
         linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
         url("https://raw.githubusercontent.com/SantiaRey/Primer-Parcial---IG2026/2330bc9ab0cf0b5f55de1115d0bfc5406860914a/img/fondo.png");
-    background-repeat: repeat;
+ background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
 }
 
 .contenedor {
@@ -38,6 +41,9 @@ header h1 {
 nav {
     margin-bottom: 2rem;
 }
+.menu li{
+    display: inline-block;
+}
 .menu {
     list-style: none;
     display: flex;
@@ -52,11 +58,17 @@ nav {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+.menu a{
+    background-color: #218BC9;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid #024166;
+    text-decoration: none;
+}
 
-.menu a:hover {
-
+.menu a:hover{
     background-color: #024166;
-       color: white;
+    color: white;
 }
 section {
 
