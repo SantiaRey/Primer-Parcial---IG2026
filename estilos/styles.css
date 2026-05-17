@@ -1,4 +1,4 @@
-/* RESET GENERAL */
+/* RESET */
 
 * {
 
@@ -32,7 +32,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* CONTENEDOR */
 
 .contenedor {
 
@@ -44,7 +44,7 @@ body {
 
     padding: 2rem;
 
-    background-color: rgba(0,0,0,0.80);
+    background-color: rgba(0,0,0,0.82);
 
     border-radius: 10px;
 }
@@ -55,13 +55,13 @@ header {
 
     text-align: center;
 
-    margin-bottom: 3rem;
+    background-color: #218BC9;
 
     padding: 2rem;
 
-    background-color: #218BC9;
-
     border-radius: 10px;
+
+    margin-bottom: 3rem;
 }
 
 header h1 {
@@ -75,12 +75,12 @@ header h1 {
 
 .subtitulo {
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
     font-weight: 300;
 }
 
-/* NAV */
+/* MENÚ */
 
 nav {
 
@@ -107,21 +107,21 @@ nav {
 
 .menu a {
 
-    text-decoration: none;
+    background-color: #218BC9;
 
     color: white;
 
-    background-color: #218BC9;
+    text-decoration: none;
 
     padding: 1rem 1.5rem;
 
     border: 2px solid #024166;
 
+    border-radius: 5px;
+
     display: inline-block;
 
     transition: 0.3s;
-
-    border-radius: 5px;
 }
 
 .menu a:hover {
@@ -168,11 +168,16 @@ article h2 {
     margin-bottom: 1.5rem;
 
     font-size: 2rem;
-
-    color: #ffffff;
 }
 
-/* CITA */
+/* TEXTO */
+
+p {
+
+    margin-bottom: 1.5rem;
+}
+
+/* BLOCKQUOTE */
 
 blockquote {
 
@@ -180,20 +185,13 @@ blockquote {
 
     font-size: 1.2rem;
 
-    margin-bottom: 2rem;
-
     padding: 1.5rem;
+
+    margin-bottom: 2rem;
 
     border-left: 5px solid white;
 
     background-color: rgba(0,0,0,0.2);
-}
-
-/* PÁRRAFOS */
-
-p {
-
-    margin-bottom: 1.5rem;
 }
 
 /* IMÁGENES */
@@ -215,13 +213,13 @@ img {
 
 aside {
 
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.3);
 
     padding: 1.5rem;
 
-    margin: 2rem 0;
-
     border-left: 5px solid white;
+
+    margin-bottom: 3rem;
 }
 
 aside h3 {
@@ -234,15 +232,24 @@ aside ul {
     margin-left: 1.5rem;
 }
 
+/* IFRAME */
+
+iframe {
+
+    border: none;
+
+    border-radius: 10px;
+}
+
 /* FOOTER */
 
 footer {
 
     text-align: center;
 
-    padding: 2rem;
-
     background-color: #218BC9;
+
+    padding: 2rem;
 
     border-radius: 10px;
 }
@@ -259,13 +266,6 @@ footer a {
 footer a:hover {
 
     text-decoration: underline;
-}
-
-.footer-texto {
-
-    margin-top: 1rem;
-
-    font-size: 0.9rem;
 }
 
 /* RESPONSIVE */
@@ -287,5 +287,10 @@ footer a:hover {
     article {
 
         padding: 1.5rem;
+    }
+
+    iframe {
+
+        height: 300px;
     }
 }
