@@ -1,49 +1,73 @@
-* { box-sizing: border-box; }
-body {
-
-    font-family: "Barlow", sans-serif;
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-#contenedor {
-	width: 90%;
-	max-width: 960px;
-	margin: 0 auto;
+body {
+    font-family: "Barlow", sans-serif;
+        background-image:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
+    url("img/fondo.png");
+        background-position: center;
+    background-repeat: repeat;
+}
+
+.contenedor {
+
+    width: 90%;
+    max-width: 1200px;
+    margin:  auto;
     padding: 2rem;
 }
+
 header {
 		text-align: center;
-        margin-bottom: 2rem;
+                margin-bottom: 2rem;
 }
-header, footer {
-	padding: 1em;
-	text-align: center;
+
+
+header h1 {
+
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+nav {
+
+    margin-bottom: 2rem;
 }
 
 .menu {
 
     list-style: none;
-
     display: flex;
-
     justify-content: center;
-
     gap: 2rem;
-
     margin-bottom: 3rem;
-
-    font-size: 1.5rem;
+    font-size: 1.5rem
 }
-header h1 {
 
-    font-family: "Barlow", sans-serif;
-
-    font-size: 3.2rem;
-
-    margin-bottom: 1rem;
-}.cita {
+.cita {
 
     font-style: italic;
-
     font-size: 1.2rem;
-    
     margin-bottom: 2rem;
+}
+
+.menu a:hover {
+
+    background-color: black;
+
+    color: white;
+}
+
+section {
+
+    margin-bottom: 3rem;
+}
+
+article {
+
+    background-color: #f2f2f2;
+
+    padding: 2rem;
+  
 }
