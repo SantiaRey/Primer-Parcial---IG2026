@@ -1,96 +1,291 @@
+/* RESET GENERAL */
+
 * {
-    box-sizing: border-box;
+
     margin: 0;
+
     padding: 0;
+
+    box-sizing: border-box;
 }
+
+/* BODY */
+
 body {
+
     font-family: "Barlow", sans-serif;
+
+    line-height: 1.7;
+
+    color: white;
+
     background-image:
-        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
-        url("https://raw.githubusercontent.com/SantiaRey/Primer-Parcial---IG2026/2330bc9ab0cf0b5f55de1115d0bfc5406860914a/img/fondo.png");
-background-position: center;
-background-attachment: fixed;
-background-repeat: repeat;
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),
+        url("../img/fondo.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-repeat: no-repeat;
 }
+
+/* CONTENEDOR PRINCIPAL */
 
 .contenedor {
 
     width: 90%;
+
     max-width: 1200px;
-    margin:  auto;
+
+    margin: 2rem auto;
+
     padding: 2rem;
+
+    background-color: rgba(0,0,0,0.80);
+
+    border-radius: 10px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 2rem;
-    background: #218BC9;
+/* HEADER */
 
+header {
+
+    text-align: center;
+
+    margin-bottom: 3rem;
+
+    padding: 2rem;
+
+    background-color: #218BC9;
+
+    border-radius: 10px;
 }
 
 header h1 {
+
     font-size: 4rem;
+
     margin-bottom: 1rem;
+
+    font-weight: 900;
 }
+
 .subtitulo {
-    font-size: 1.4rem;
-    color: #ffffff;
+
+    font-size: 1.5rem;
+
+    font-weight: 300;
 }
+
+/* NAV */
 
 nav {
-    margin-bottom: 2rem;
+
+    margin-bottom: 3rem;
 }
-.menu li{
+
+.menu {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1.5rem;
+
+    flex-wrap: wrap;
+}
+
+.menu li {
+
     display: inline-block;
 }
-.menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
-    font-size: 1.5rem;
-}
-.cita {
 
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-.menu a{
-    background-color: #218BC9;
-    color: white;
-    padding: 8px 12px;
-    border: 1px solid #024166;
+.menu a {
+
     text-decoration: none;
+
+    color: white;
+
+    background-color: #218BC9;
+
+    padding: 1rem 1.5rem;
+
+    border: 2px solid #024166;
+
+    display: inline-block;
+
+    transition: 0.3s;
+
+    border-radius: 5px;
 }
 
-.menu a:hover{
+.menu a:hover {
+
     background-color: #024166;
-    color: white;
+
+    transform: scale(1.05);
 }
+
+.menu a:visited {
+
+    color: #d8d8d8;
+}
+
+.menu a:active {
+
+    background-color: orange;
+}
+
+/* SECCIONES */
+
 section {
 
     margin-bottom: 3rem;
 }
 
+/* ARTÍCULOS */
+
 article {
 
-    background-color: #4CA2D5;
+    background-color: rgba(76,162,213,0.90);
+
     padding: 2rem;
-  
+
+    margin-bottom: 3rem;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
+
+article h2 {
+
+    margin-bottom: 1.5rem;
+
+    font-size: 2rem;
+
+    color: #ffffff;
+}
+
+/* CITA */
+
+blockquote {
+
+    font-style: italic;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 2rem;
+
+    padding: 1.5rem;
+
+    border-left: 5px solid white;
+
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* PÁRRAFOS */
+
+p {
+
+    margin-bottom: 1.5rem;
+}
+
+/* IMÁGENES */
+
 img {
 
     width: 100%;
+
     max-width: 700px;
+
     display: block;
+
     margin: 2rem auto;
+
+    border-radius: 10px;
 }
 
+/* ASIDE */
+
+aside {
+
+    background-color: rgba(0,0,0,0.25);
+
+    padding: 1.5rem;
+
+    margin: 2rem 0;
+
+    border-left: 5px solid white;
+}
+
+aside h3 {
+
+    margin-bottom: 1rem;
+}
+
+aside ul {
+
+    margin-left: 1.5rem;
+}
+
+/* FOOTER */
+
 footer {
+
     text-align: center;
-    margin-top: 1rem;
-    padding-top: 1rem;
+
+    padding: 2rem;
+
     background-color: #218BC9;
+
+    border-radius: 10px;
+}
+
+footer a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+footer a:hover {
+
+    text-decoration: underline;
+}
+
+.footer-texto {
+
+    margin-top: 1rem;
+
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+
+        font-size: 2.5rem;
     }
+
+    .menu {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    article {
+
+        padding: 1.5rem;
+    }
+}
